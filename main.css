@@ -1,0 +1,101 @@
+/* Resetting box model and removing default margin/padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #98c52f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Main heading styling */
+h1 {
+    font-size: 2rem;
+}
+
+/* Main content styling */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 20px;
+}
+
+/* News list styling */
+#newsList {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 1200px;
+    margin: 0 auto; /* Centering the news list */
+}
+
+/* Article styling */
+.article {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease; /* Add a transition for hover effect */
+}
+
+/* Article heading styling */
+.article h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+/* Article paragraph styling */
+.article p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Link styling */
+.article a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+}
+
+/* Link hover effect */
+.article a:hover {
+    background-color: #555;
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Smaller heading on mobile */
+    }
+
+    .article h2 {
+        font-size: 1.4rem; /* Adjust article title size */
+    }
+
+    .article p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+}
